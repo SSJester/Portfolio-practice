@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__language-list">
+                    <div class="header__image-container">
+                        <img src="img/header/Ukraine.svg" alt="flag">
+                    </div>
+                    <select name="language" class="header__select">
+                        <option value="ukr">Ukranian</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="header__checkbox checkbox-header">
+                    <p class="checkbox-header__text">Light theme</p>
+                    <label class="checkbox-header__label">
+                        <input type="checkbox">
+                        <span class="checkbox-header__switch"></span>
+                    </label>
+                </div>                  
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__greeting greeting">
+                <div class="greeting__container">
+                    <div class="greeting__scroll">
+                        <div class="greeting__hidden-block">
+                            <h1 class="greeting__title">Welcome to my portfolio!</h1>
+                            <p class="greeting__text">
+                                My name is Olexandr Shelkoviy. I am a future developer.
+                                On this page I want to show some of my html, css and js skills.
+                            </p>
+                        </div>                        
+                        <div class="greeting__hidden-text">Let`s go!</div>
+                    </div>            
+                    <button class="greeting__mouse"></button>
+                </div>
+            </section>
+            <section class="main__websites websites">
+                <div class="websites__container">
+                    <h2 class="websites__title">My websites practice</h2>
+                    <div class="websites__images-block">
+                        <div class="websites__image">
+                            <a href="#" class="websites__image-link">
+                                <img src="img/websites/website_01.png" alt="">
+                                <p class="websites__background-text">fsefse fawf awfwa waf aw fawfwafwafawf wafwafaw wafwa</p>
+                            </a>
+                        </div>
+                        <div class="websites__image">
+                            <a href="#" class="websites__image-link">
+                                <img src="img/websites/website_02.png" alt="">
+                                <p class="websites__background-text">sefse fe</p>
+                            </a>
+                            
+                        </div>
+                        <div class="websites__image">
+                            <a href="#" class="websites__image-link">
+                                <img src="img/websites/website_03.png" alt="">
+                                <p class="websites__background-text">fsef</p>
+                            </a>                
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__javascript javascript">
+                <div class="javascript__container">
+                    <h2 class="javascript__title">
+                        Several small tasks on javascript
+                    </h2>
+                    <div class="javascript__images">
+                        <a href="#popup-ball" class="javascript__link popup-link">
+                            <img src="img/javascript/ball.png" alt="ball">
+                            <span>Ball</span>
+                        </a>
+                        <a href="#popup-slider" class="javascript__link popup-link">
+                            <img src="img/javascript/slider.png" alt="slider">
+                            <span>Slider</span>
+                        </a>
+                        <a href="#popup-numbers" class="javascript__link popup-link">
+                            <img src="img/javascript/numbers.png" alt="numbers">
+                            <span>Ball</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="main__appeal appeal">
+                <div class="appeal__container">
+                    <p class="appeal__text">
+                        At the moment I'm in the learning phase, so gradually new items will appear here to show my progress.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__text">
+                    Coming soon...
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <div id="popup-ball" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title">Ball</h2>
+                <div class="popup__image">
+                    <img src="" alt="">
+                </div>
+                <p class="popup__text">awfawfawf wf awf awf awfawf wafwa
+                    fawfwafwafawf fawf  awf aw awf awfaw fwa 
+                    awf aw faw awf w afwafwafwaf awfawfwa awfawf
+                </p>
+                <div class="popup__links">
+                    <a href="#" class="popup__demo"></a>
+                    <a href="#" class="popup__github"></a>
+                </div>
+                <button class="popup__close">X</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup-slider" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title">Slider</h2>
+                <div class="popup__image">
+                    <img src="" alt="">
+                </div>
+                <p class="popup__text">awfawfawf wf awf awf awfawf wafwa</p>
+                <div class="popup__links">
+                    <a href="#" class="popup__demo"></a>
+                    <a href="#" class="popup__github"></a>
+                </div>
+                <button class="popup__close">X</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup-numbers" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title">Numbers System</h2>
+                <div class="popup__image">
+                    <img src="" alt="">
+                </div>
+                <p class="popup__text">awfawfawf wf awf awf awfawf wafwa</p>
+                <div class="popup__links">
+                    <a href="#" class="popup__demo"></a>
+                    <a href="#" class="popup__github"></a>
+                </div>
+                <button class="popup__close">X</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
