@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="numbers.css">
+    <title>Number systems</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img id="background-image" src="background.jpg" alt="">
+        <main class="main">
+            <div class="main__container">
+                <h1 class="main__title">Калькулятор систем числення</h1>
+                <div class="main__calculetor calculator">
+                    <div class="calculator__data">
+                        <p class="calculator__text">Оберіть систему числення, з якої хочете зробити перетворення</p>
+                        <select name="input-data" id="calculator__input-data">
+                            <option value="2" >2</option>
+                            <option value="8">8</option>
+                            <option value="10" selected>10</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    <div class="calculator__data">
+                        <p class="calculator__text">Оберіть систему числення, в яку хочете зробити перетворення</p>
+                        <select name="output-data" id="calculator__output-data">
+                            <option value="2" selected>2</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    <div class="calculator__data">
+                        <p class="calculator__text">Введіть ваше число</p>
+                        <input type="text" maxlength="70">                        
+                    </div>
+                    <button type="submit">Результат</button>
+                    <div class="calculator__result"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="numbers.js"></script>
+</body>
+</html>

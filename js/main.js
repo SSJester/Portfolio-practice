@@ -16,6 +16,7 @@ function scrollHiddenBlock() {
     }
 }
 
+
 scrollButton.addEventListener("click", showHiddenBlock);
 window.addEventListener("scroll", scrollHiddenBlock);
 

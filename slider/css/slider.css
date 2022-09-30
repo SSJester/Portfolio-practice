@@ -1,0 +1,147 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    min-width: 280px;
+    letter-spacing: 0.1em;
+}
+
+a,
+ul,
+ol,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    color: black;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+span {
+    color: aliceblue;
+}
+
+/*-----------------------------------------*/
+body {
+    
+}
+#slash {
+    margin: 0px 5px;
+}
+
+.amount-slides {
+    padding: 7px 10px;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.current-slide {
+    padding: 7px 10px;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.slider {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.slider__container {
+    max-width: 1110px;
+    padding: 50px 15px 0px;
+    margin: 0 auto;
+}
+
+.background img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: blur(20px);
+}
+
+.slider__body {
+    position: relative;
+    width: 1080px;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+.slider__image img {
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 1080px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    border: 3px solid #FFFFFF;
+}
+
+.first img {
+    left: 0;
+}
+
+.last img {
+    left: -1080px;
+}
+
+.slider__container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider__container button:hover {
+    background-color: rgba(98, 94, 94, 0.8);
+    
+}
+
+.slider__left-btn {
+    left: 0px;
+}
+
+.slider__right-btn {
+    right: 0px;
+}
+
+.counter {
+    text-align: center;
+}
+
+
