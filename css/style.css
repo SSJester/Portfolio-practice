@@ -81,7 +81,7 @@ a:hover {
     object-fit: cover;
 }
 
-.header__select {
+#header__select {
     height: 28px;
     min-width: 100px;
     line-height: 28px;
