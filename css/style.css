@@ -81,7 +81,7 @@ a:hover {
     object-fit: cover;
 }
 
-#header__select {
+.header__select {
     height: 28px;
     min-width: 100px;
     line-height: 28px;
@@ -103,10 +103,9 @@ a:hover {
     font-weight: 600;
     font-size: 18px;
     margin-right: 15px;
-    /* text-shadow: 1px 0px 1px rgba(255, 255, 255, 1); */
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
-    padding: 3px;
+    padding: 3px 10px;
 }
 
 .checkbox-header__label{
@@ -133,7 +132,7 @@ a:hover {
     transition: 0.5s;
 }
 
-.checkbox-header__label .checkbox-header__switch:before {
+.checkbox-header__label .checkbox-header__switch::before {
     content: '';
     position: absolute;
     top: 1px;
@@ -142,9 +141,9 @@ a:hover {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: white;
+    background-color: #eee;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .checkbox-header__label input[type=checkbox] {
@@ -154,14 +153,16 @@ a:hover {
     position: absolute;
     z-index: -1;
     opacity: 0;
+    
 }
 
 .checkbox-header__label input[type=checkbox]:checked+.checkbox-header__switch {
-    background: #8F8F8F;
+    background: #8F8F8F;    
 }
 
 .checkbox-header__label input[type=checkbox]:checked+.checkbox-header__switch:before {
     transform: translateX(28px);
+    background-color: inherit;
 }
 
 .checkbox-header__label input[type="checkbox"]:not(:disabled)+.checkbox-header__switch {
@@ -376,7 +377,7 @@ a:hover {
     justify-content: space-between;
 }
 
-.javascript__images img {
+.javascript__images img{
     width: 100px;
     height: 100px;
     transition: 1s;
@@ -418,6 +419,7 @@ a:hover {
 .footer__text {
     text-align: center;
     font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .popup {
@@ -474,17 +476,13 @@ a:hover {
 }
 
 .popup__image {
-    position: relative;
-    width: 450px;
-    height: 300px;
+    max-width: 450px;
+    max-height: 300px;
     border: 5px solid #000;
     margin-bottom: 30px;
 }
 
 .popup__image img {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -493,6 +491,7 @@ a:hover {
 .popup__text {
     font-size: 16px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .popup__links {
@@ -517,11 +516,18 @@ a:hover {
 }
 
 .popup__close {
-    background-color: #fff;
+    background-color: inherit;
+    color: inherit;
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 20px;
+}
+
+.dark {
+    background-color: #0A0A0B;
+    color: #7E7E85;
+    border-color: #7E7E85;
 }
 
 

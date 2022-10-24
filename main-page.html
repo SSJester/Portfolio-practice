@@ -7,27 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/portfolio.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
-    <div class="wrapper translation">
+    <div class="wrapper translation theme">
         <header class="header">
             <div class="header__container">
                 <div class="header__language-list">                    
                     <div class="header__image-container">
                         <img src="img/header/Great_Britain.svg" alt="flag">
                     </div>
-                    <!-- comments -->
-                    <select name="language" id="header__select" >
+                    <select name="language" class="header__select theme">
                         <option value="ukr">Ukranian</option>
                         <option value="en" selected>English</option>
                     </select>
                 </div>
                 <div class="header__checkbox checkbox-header">
-                    <p class="checkbox-header__text">Theme</p>
+                    <p class="checkbox-header__text theme">Theme</p>
                     <label class="checkbox-header__label">
-                        <input type="checkbox" disabled>
+                        <input type="checkbox">
                         <span class="checkbox-header__switch"></span>
                     </label>
                 </div>                  
@@ -82,15 +82,15 @@
                     </h2>
                     <div class="javascript__images">
                         <a href="#popup-ball" class="javascript__link popup-link">
-                            <img src="img/javascript/ball.png" alt="ball">
+                            <img src="img/javascript/ball.svg" alt="ball">
                             <span>Ball</span>
                         </a>
                         <a href="#popup-slider" class="javascript__link popup-link">
-                            <img src="img/javascript/slider.png" alt="slider">
+                            <img src="img/javascript/slider.svg" alt="slider">
                             <span>Slider</span>
                         </a>
                         <a href="#popup-numbers" class="javascript__link popup-link">
-                            <img src="img/javascript/numbers.png" alt="numbers">
+                            <img src="img/javascript/numbers.svg" alt="numbers">
                             <span>Numbers system</span>
                         </a>
                     </div>
@@ -115,7 +115,7 @@
     <script src="js/main.js"></script>
     <div id="popup-ball" class="popup">
         <div class="popup__body">
-            <div class="popup__content">
+            <div class="popup__content theme">
                 <h2 class="popup__title">Ball</h2>
                 <div class="popup__image">
                     <img src="img/popup/ball.png" alt="football-field">
@@ -132,7 +132,7 @@
     </div>
     <div id="popup-slider" class="popup">
         <div class="popup__body">
-            <div class="popup__content">
+            <div class="popup__content theme">
                 <h2 class="popup__title">Slider</h2>
                 <div class="popup__image">
                     <img src="img/popup/slider.jpg" alt="slider-screen">
@@ -148,7 +148,7 @@
     </div>
     <div id="popup-numbers" class="popup">
         <div class="popup__body">
-            <div class="popup__content">
+            <div class="popup__content theme">
                 <h2 class="popup__title">Numbers System</h2>
                 <div class="popup__image">
                     <img src="img/popup/number-systems.png" alt="calculator-display">
