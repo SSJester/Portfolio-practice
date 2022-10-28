@@ -71,7 +71,6 @@ window.onload = function () {
     // Start animation
 
     const scrollButton = document.querySelector(".greeting__mouse");
-    const greetingHiddenText = document.querySelector(".greeting__hidden-text");
     const greetingScrollHide = document.querySelector(".greeting__scroll");
 
     function showHiddenBlock() {
@@ -88,6 +87,35 @@ window.onload = function () {
 
     scrollButton.addEventListener("click", showHiddenBlock);
     window.addEventListener("scroll", scrollHiddenBlock);
+
+    // Sections animation
+
+    const websitesBlocks = document.querySelectorAll(".websites .websites__image");
+    const javascriptBlocks = document.querySelectorAll(".javascript .javascript__link");
+    const titles = document.querySelectorAll(`[class*="__title"]`);
+    const windowHeight = window.outerHeight;
+
+    if (window.pageYOffset > 0.4 * windowHeight) {
+        blocksAnimation();
+    }
+
+    function blocksAnimation() {
+        if (window.pageYOffset > 0.4 * windowHeight) {
+            blocksStylesAppropriation(titles[1], websitesBlocks);
+        }
+        if (window.pageYOffset > 1.3 * windowHeight) {
+            blocksStylesAppropriation(titles[2], javascriptBlocks);
+        }
+    }
+
+    function blocksStylesAppropriation(title, arrBlocks) {
+        title.style.opacity = "1";
+        arrBlocks.forEach(elem => {
+            elem.style.transform = "translateY(0vh)";
+        });
+    }
+
+    window.addEventListener("scroll", blocksAnimation);
 
     // Popup
 

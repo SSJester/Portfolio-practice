@@ -48,6 +48,10 @@ a:hover {
     overflow: hidden;
 }
 
+.block-animation {
+
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -130,6 +134,7 @@ a:hover {
     vertical-align: top;
     background: #eee;
     transition: 0.5s;
+    z-index: 1;
 }
 
 .checkbox-header__label .checkbox-header__switch::before {
@@ -144,6 +149,23 @@ a:hover {
     background-color: #eee;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
     transition: transform 0.3s;
+    z-index: 50;
+}
+
+.checkbox-header__switch img {
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+}
+
+.checkbox-header__switch #night {
+    left: 4px;
+}
+
+.checkbox-header__switch #day {
+    right: 4px;
 }
 
 .checkbox-header__label input[type=checkbox] {
@@ -152,8 +174,7 @@ a:hover {
     height: 0;
     position: absolute;
     z-index: -1;
-    opacity: 0;
-    
+    opacity: 0;    
 }
 
 .checkbox-header__label input[type=checkbox]:checked+.checkbox-header__switch {
@@ -185,7 +206,7 @@ a:hover {
 .greeting {
     text-align: center;
     padding-top: 300px;
-    height: 120vh;
+    height: 100vh;
 }
 
 .greeting__scroll {
@@ -289,6 +310,10 @@ a:hover {
     }
 }
 
+.websites {
+    height: 100vh;
+}
+
 .websites__container {
     text-align: center;
     margin-bottom: 100px;
@@ -298,6 +323,8 @@ a:hover {
     font-size: 24px;
     margin-bottom: 50px;
     padding-top: 15px;
+    opacity: 0;
+    transition: 0.8s;
 }
 
 .websites__images-block {
@@ -314,7 +341,9 @@ a:hover {
     border: 1px solid #000;
     display: flex;
     flex-direction: column;
-    border-radius: 30px;    
+    border-radius: 30px;  
+    transform: translateY(100vh);
+    transition: 0.8s;
 }
 
 .websites__image img {
@@ -360,6 +389,10 @@ a:hover {
     }
 }
 
+.javascript {
+    height: 100vh;
+}
+
 .javascript__container {
     margin-bottom: 100px;
     text-align: center;
@@ -369,6 +402,8 @@ a:hover {
     font-size: 24px;
     margin-bottom: 100px;
     padding-top: 15px;
+    opacity: 0;
+    transition: 0.8s;
 }
 
 .javascript__images {
@@ -390,6 +425,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    transform: translateY(100vh);
+    transition: 0.8s;
 }
 
 .javascript__link:hover {
